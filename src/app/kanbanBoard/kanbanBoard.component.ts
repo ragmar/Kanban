@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'kanban-board',
-  templateUrl: './kanbanBoard.component.html',
-  styleUrls: ['./kanbanBoard.component.scss']
+    selector: 'kanban-board',
+    templateUrl: './kanbanBoard.component.html',
+    styleUrls: ['./kanbanBoard.component.scss'],
+    standalone: false
 })
 export class KanbanBoard implements OnInit {
   tasks: Task[];
