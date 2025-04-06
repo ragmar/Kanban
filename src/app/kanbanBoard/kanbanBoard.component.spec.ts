@@ -1,6 +1,5 @@
-import {async, ComponentFixture, TestBed, tick} from '@angular/core/testing';
+import {waitForAsync, ComponentFixture, TestBed} from '@angular/core/testing';
 import {KanbanBoard} from './kanbanBoard.component';
-import {RouterTestingModule} from '@angular/router/testing';
 import {FormsModule} from '@angular/forms';
 import {CUSTOM_ELEMENTS_SCHEMA} from "@angular/core";
 
@@ -33,11 +32,10 @@ describe('KanbanBoard', () => {
     return compiled.querySelector(`[data-test-id="${testId}"]`);
   };
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed
       .configureTestingModule({
         imports: [
-          RouterTestingModule,
           FormsModule
         ],
         declarations: [KanbanBoard],
