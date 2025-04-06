@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "kanbanBoard:build"
+            "buildTarget": "kanbanBoard:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "kanbanBoard:build:production"
+              "buildTarget": "kanbanBoard:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kanbanBoard:build"
+            "buildTarget": "kanbanBoard:build"
           }
         },
         "test": {
@@ -115,8 +115,8 @@
           }
         }
       }
-    }},
-  "defaultProject": "kanbanBoard",
+    }
+  },
   "cli": {
     "analytics": false
   }
